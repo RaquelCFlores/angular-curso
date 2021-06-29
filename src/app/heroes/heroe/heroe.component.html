@@ -1,0 +1,19 @@
+<h1>{{ nombre }}</h1>
+
+<dl>
+    <td> Nombre: </td>  <!--Table description  -->
+    <dd> {{nombre}} </dd>  <!--Description  -->
+
+    <td> Edad: </td>
+    <dd> {{edad}} </dd>
+
+    <td> Función: </td>
+    <dd> {{obtenerNombre()}} </dd> <!--Obtener método de heroe.component.ts y se manda a llamar-->
+
+    <td> Capitalizado: </td>
+    <dd> {{ nombreCapitalizado }} </dd>
+
+</dl>
+
+<button (click)="cambiarNombre()"> Cambiar Nombre</button>
+<button (click)="cambiarEdad()"> Cambiar Edad </button>
